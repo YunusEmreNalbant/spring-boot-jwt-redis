@@ -1,4 +1,4 @@
-# Spring Boot ile JWT ve Redis Tabanlı Kimlik Doğrulama
+# Spring Boot ile Redis Kullanarak JWT ile Kimlik Doğrulama
 
 Bu proje, **Spring Boot** kullanarak geliştirilen JWT (JSON Web Token) tabanlı bir kimlik doğrulama sistemidir. Projede, kullanıcı oturum yönetimi için JWT token'ları kullanılırken, token'ların güvenli ve hızlı bir şekilde yönetilmesi için Redis kullanılmıştır.
 
