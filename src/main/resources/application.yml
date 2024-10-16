@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: spring-jwt-redis
+  datasource:
+    url: jdbc:postgresql://localhost:5432/jwtredis
+    username: root
+    password: 123123123
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+  data:
+    redis:
+      host: localhost
+      port: 6379
+
+jwt:
+  secret: d49f4c05b7db62d15625dd5d69e61d8c2b23f02507445b89f6ee8adb89215768575a08867ae08ba8d0af67b60068341bb706df83029484efb5ff2380d5da8ed945417f49af5938316c7f97bb0a53d17c45e81a539f62aee023ef7cc3f74e97eab167a887ae16a307f598766730f978d87cd467ff0a3f47c47f45fe9052dfb4d902d127cc7ca4ad8bbea242e977c7c34c380df8f8f3f790e7ef68ed307f77b19c51e35fc7d33574e04c25231bda73336b9a434668ea3fa2122aad0e25c37ec6a7134931fc4ed8147a11fecc679929ca309f59d33a39134fc561c7036cce1e967ac2f85d8d0c126d50bdc04cbcc21cbedf8ece5249697aae0a34b154d250d4e458
+  expireMs: 86400000 # 24 hours
