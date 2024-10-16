@@ -17,7 +17,7 @@ JWT (JSON Web Token) ile kimlik doğrulama yaparken, token'ı Redis gibi bir ön
 - Eğer çok cihazlı giriş veya anlık oturum sonlandırma gibi özellikler isteniyorsa, Redis kullanımı bu tür gereksinimleri karşılayabilir.
 - Ancak JWT'yi tamamen stateless ve basit tutmak istiyorsanız, Redis'e ihtiyaç olmayabilir.
 
-## Akışı Şu Şekilde Özetlersek
+## Akışı Şu Şekilde
 
 - **Token Oluşturma:**
     - Kullanıcı giriş yaptığında, sunucu bir JWT oluşturur ve bu token'ı istemciye döner.
@@ -38,10 +38,3 @@ JWT (JSON Web Token) ile kimlik doğrulama yaparken, token'ı Redis gibi bir ön
 Redis, token'ın geçerliliğini yönetmek için iki ana amaç taşır:
 - Token'ın iptal edilip edilmediğini kontrol etmek.
 - Kullanıcının güvenlik durumuna göre oturum yönetimini sağlamak.
-
-## Projeyi Çalıştırma
-
-### Gereksinimler
-- **Java 11** veya daha üst bir sürüm
-- **Maven** (Proje bağımlılıklarını yönetmek için)
-- **Redis** (Yerel veya uzak bir Redis sunucusu)
